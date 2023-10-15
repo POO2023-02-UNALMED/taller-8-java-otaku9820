@@ -1,8 +1,8 @@
 package futbol;
 
 public class Portero extends Futbolista {
-	private short golesRecibidos;
-	private byte dorsal;
+	public short golesRecibidos;
+	public byte dorsal;
 	public Portero() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -30,16 +30,11 @@ public class Portero extends Futbolista {
                 + " con el dorsal " + getDorsal() + ". Le han marcado " + golesRecibidos + " goles.";
     }
 	
-	 public int compareTo(Portero f) {
-	    	
-	    	return Math.abs( this.getGolesRecibidos()-f.getGolesRecibidos());
-	    	
-	    	
-	    		
-	    	
-	    	
-	    	
-	    }
+	 public int compareTo(Object f) {
+		    
+		        Portero otroPortero = (Portero) f;
+		        return Math.abs(this.getGolesRecibidos() - otroPortero.getGolesRecibidos());}
+		    
 	 public  boolean jugarConLasManos(){
 		 return true;
 	 }

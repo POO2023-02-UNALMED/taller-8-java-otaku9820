@@ -1,8 +1,8 @@
 package futbol;
 
 public class Jugador extends Futbolista {
-	private short golesMarcados;
-	private byte dorsal;
+	public short golesMarcados;
+	public byte dorsal;
 	public Jugador() {
 		super();
 		this.golesMarcados=289;
@@ -14,9 +14,9 @@ public class Jugador extends Futbolista {
 		this.golesMarcados=goles;
 		this.dorsal=dorsal;
 	}
-public int compareTo(Futbolista f) {
-    	
-    	return Math.abs( this.getEdad()-f.getEdad());
+public int compareTo(Object f) {
+    	Jugador nuevoJugador=(Jugador)f;
+    	return Math.abs( this.getEdad()-nuevoJugador.getEdad());
     	
     	
     		

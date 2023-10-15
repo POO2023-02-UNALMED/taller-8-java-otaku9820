@@ -8,7 +8,7 @@ public class Portero extends Futbolista {
 		// TODO Auto-generated constructor stub
 	}
 	public Portero(String nombre, int edad, short goles, byte dorsal) {
-		super(nombre, edad,"portero" );
+		super(nombre, edad,"Portero" );
 		this.golesRecibidos=goles;
 		this.dorsal=dorsal;
 		// TODO Auto-generated constructor stub

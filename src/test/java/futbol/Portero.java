@@ -4,7 +4,7 @@ public class Portero extends Futbolista {
 	public short golesRecibidos;
 	public byte dorsal;
 	public Portero() {
-		super();
+		super("Maradona",30,"Portero");
 		// TODO Auto-generated constructor stub
 	}
 	public Portero(String nombre, int edad, short goles, byte dorsal) {

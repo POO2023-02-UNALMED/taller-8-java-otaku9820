@@ -25,7 +25,7 @@ public int compareTo(Futbolista f) {
     	
     }
 public String toString() {
-    return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + " años, y juega de " + this.getPosicion()
+    return "El futbolista " + this.getNombre() + " tiene " + this.getEdad() + " y juega de " + this.getPosicion()
             + " con el dorsal " + dorsal + ". Ha marcado " + this.golesMarcados + " goles.";
 }
 public boolean jugarConLasManos() {

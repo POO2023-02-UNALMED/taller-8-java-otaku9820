@@ -26,7 +26,7 @@ public class Portero extends Futbolista {
 		this.dorsal = dorsal;
 	}
 	 public String toString() {
-        return "El futbolista " + getNombre() + " tiene " + getEdad() + " años, y juega de " + getPosicion()
+        return "El futbolista " + getNombre() + " tiene " + getEdad() + "juega de " + getPosicion()
                 + " con el dorsal " + getDorsal() + ". Le han marcado " + golesRecibidos + " goles.";
     }
 	
